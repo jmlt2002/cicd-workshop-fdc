@@ -18,7 +18,7 @@ jobs:
           # Provides secure, temporary credentials for GCP.
           # Supports authentication using Service Account Key JSONs (less secure, legacy method).
           - name: Authenticate with GCP 
-            uses: google-github-actions/auth@v1Go to Settings > Secrets and Variables > Actions > Repository Secrets and add a secret named GCP_SA_KEY with the provided credentials.
+            uses: google-github-actions/auth@v1Go
             with:
               credentials_json: ${{ secrets.GCP_SA_KEY }}
 
