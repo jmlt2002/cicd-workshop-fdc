@@ -29,6 +29,13 @@ jobs:
           - name: This will be your CD ⚙️
             run: echo "This will be your CD ⚙️"
           
+          # Popular community-maintained action used to set up Flutter in GitHub workflows. 
+          # Installs Flutter and allows you to run commands like flutter build, flutter test, and flutter analyze within your CI/CD pipeline.
+          - name: Setup Flutter 
+            uses: subosito/flutter-action@v2
+            with:
+              channel: 'stable'
+
           - name: Get dependencies
             run: flutter pub get
 
