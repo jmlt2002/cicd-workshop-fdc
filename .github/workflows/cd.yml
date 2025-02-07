@@ -64,4 +64,4 @@ jobs:
             run: |
               gcloud run deploy cicd-3 \
                 --image europe-west3-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/${{ secrets.GCP_ARTIFACT_REGISTRY }}/game132:cicd-3v1 \
-                --region us-central \
+                --region us-central1 \
