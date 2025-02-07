@@ -32,5 +32,5 @@ jobs:
           - name: Error checks
             run: flutter analyze
 
-          - name: Runs tests
+          - name: Runs tests (yaml branch)
             run: flutter test
